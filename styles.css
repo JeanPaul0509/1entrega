@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #004080;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Secciones */
+main section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  color: #0066cc;
+}
+
+ul.chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+ul.chips li {
+  background: #e6f0ff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #004080;
+}
+
+/* Proyectos */
+#proyectos article {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #0066cc;
+  color: white;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background: #004080;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
