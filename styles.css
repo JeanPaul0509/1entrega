@@ -13,23 +13,23 @@ body {
   padding: 1rem;
 }
 
-/* Encabezado */
+/* ===== HEADER ===== */
 header {
   text-align: center;
   margin-bottom: 2rem;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #004080;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #555;
 }
 
-/* Secciones */
+/* ===== SECCIONES ===== */
 main section {
   margin-bottom: 2rem;
 }
@@ -37,6 +37,7 @@ main section {
 h2 {
   margin-bottom: 0.5rem;
   color: #0066cc;
+  font-size: 1.2rem;
 }
 
 ul.chips {
@@ -54,7 +55,7 @@ ul.chips li {
   color: #004080;
 }
 
-/* Proyectos */
+/* ===== PROYECTOS ===== */
 #proyectos article {
   background: #fff;
   padding: 1rem;
@@ -63,7 +64,7 @@ ul.chips li {
   margin-bottom: 1rem;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   margin-top: 2rem;
@@ -85,13 +86,72 @@ footer button:hover {
   background: #004080;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* ===================== */
+/* MOBILE-FIRST (default)*/
+/* ===================== */
+body {
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ===================== */
+/* VISTA TABLET / DESKTOP*/
+/* ===================== */
+@media (min-width: 768px) {
   body {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    padding: 2rem 4rem;
   }
 
   header h1 {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  main {
+    gap: 2rem;
+  }
+
+  #tecnologias ul {
+    justify-content: flex-start;
+  }
+
+  #proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  #proyectos article {
+    margin: 0; /* grid ya da separación */
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.15rem;
+    padding: 3rem 8rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 1rem;
   }
 }
